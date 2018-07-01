@@ -4,15 +4,8 @@ class Book
     @title = title
   end
   
-  def title
-    @title
-  end
-  
-  attr_accessor(:author)
-  
-  attr_accessor(:genre)
-  
-  attr_accessor(:page_count)
+  attr_accessor :author, :page_count, :assert_genre
+  attr_reader :title
   
   def turn_page
     puts "Flipping the page...wow, you read fast!"
